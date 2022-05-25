@@ -1,7 +1,13 @@
+:root {
+  --text-color: #212121;
+  --text-color2: #ffffff;
+  --text-color3: #757575;
+  --brand-color: #2196f3;
+}
+
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
-  color: #212121;
-  background: #ffffff;
+  color: var(--text-color);
   font-size: 14px;
 }
 
@@ -14,26 +20,26 @@ nav {
   line-height: 1.17;
 }
 
-h1 {
+.headermain {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
-  color: #ffffff;
+  color: var(--text-color2);
 }
 
-h2 {
+.headermiddle {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
 }
 
-h3 {
+.postheader {
   font-weight: 700;
   line-height: 2;
 }
 
-p {
-  color: #757575;
+.post {
+  color: var(--text-color3);
   line-height: 1.88;
 }
 
@@ -52,22 +58,21 @@ address {
 
 .button {
   background-color: #f5f4fa;
-  color: #212121;
+  color: var(--text-color);
   font-size: 16px;
   font-weight: 500;
   border: none;
   padding: 15px 32px;
   text-align: center;
   cursor: pointer;
-  background: #f5f4fa;
   border-radius: 4px;
   line-height: 1.6;
+  font-family: inherit;
 }
 
 .button:hover {
-  background-color: #2196f3;
   color: #ffffff;
-  background: #2196f3;
+  background: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -79,29 +84,30 @@ address {
 }
 
 .link {
-  color: #757575;
+  color: var(--text-color3);
+  font-weight: 500;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 
 .link:focus {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 
 .navibutt {
   text-decoration: none;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .navibutt:hover {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 
 .navibutt:focus {
-  color: #2196f3;
+  color: var(--brand-color);
 }
 
 .navibutt:visited {
@@ -121,7 +127,7 @@ address {
 
 .logo {
   font-family: 'Raleway';
-  color: #2196f3;
+  color: var(--brand-color);
   text-decoration: none;
   font-style: normal;
   font-weight: 700;
@@ -130,9 +136,9 @@ address {
 }
 
 .studioheader {
-  color: black;
+  color: var(--text-color);
 }
 
 .studiofooter {
-  color: #ffffff;
+  color: var(--text-color2);
 }
