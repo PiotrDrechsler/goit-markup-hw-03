@@ -45,13 +45,15 @@ address {
 }
 
 .contanier {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .section {
   padding-top: 94px;
+  padding-left: 15px;
   padding-bottom: 94px;
+  padding-right: 15px;
 }
 
 /* ======= L I N K S  ======= */
@@ -137,7 +139,9 @@ address {
 .header .contanier {
   display: flex;
   align-items: center;
-  padding: 24px 0 24px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 24px 15px 24px 15px;
 }
 
 .header {
@@ -178,15 +182,16 @@ address {
 }
 
 .navigation-adress-item:last-child {
-  margin-right: 127px;
+  margin-right: 12px;
 }
 
 /* ======= M A I N ======= */
 
 /* ======= F I R S T  S E C T I O N ======= */
 
-.main .contanier {
+.main-contanier {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -198,23 +203,25 @@ address {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--text-color2);
-  display: flex;
   width: 696px;
   padding-bottom: 30px;
-  margin: auto;
 }
+ 
 
 .main-header-background1 {
   background-color: var(--bacground-color1);
-  padding: 200px 0 200px 0;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 
 .main-button {
   width: 200px;
-  padding: 10px 41px 10px 42px;
+  height: 50px;
+  justify-content: space-evenly;
   letter-spacing: 0.06em;
-  display: flex;
-  margin: auto;
 }
 
 /* ======= S E C O N D  S E C T I O N ======= */
@@ -222,6 +229,7 @@ address {
 .second-section-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .second-section-head {
@@ -230,7 +238,7 @@ address {
   letter-spacing: 0.06em;
 }
 
-.second-section-li:not(:first-child) {
+.second-section-li {
   margin-left: 30px;
 }
 
@@ -243,8 +251,9 @@ address {
 }
 
 /* ======= T H I R D  S E C T I O N ======= */
+
 .third-section {
-  padding:0 0 94px 0
+  padding-top:94px;
 }
 
 .third-section-head {
@@ -260,7 +269,11 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+ 
+}
+
+.third-section-li {
+  margin-left: 30px;
 }
 
 /* ======= C R E W  S E C T I O N ======= */
@@ -280,6 +293,7 @@ address {
 .crew-section-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .crew-section-item {
@@ -299,12 +313,15 @@ address {
 
 .crew-section-post {
   font-size: 16px;
-  color:var(--text-color3);
+  color:var(--text-color3); 
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 10px 0 30px 0;
-  
+  margin: 10px 0 30px 0;  
+}
+
+.crew-section-item {
+  margin-left: 30px;
 }
 
 /* ======= P O R T F O L I O  B U T T O N S ======= */
@@ -337,6 +354,8 @@ address {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-item {
@@ -344,12 +363,7 @@ address {
   margin-bottom: 30px;
 }
 
-.portfolio-item:nth-last-child(-n+3) {
-  margin-bottom: 0px;
-}
-
-.portfolio-item:nth-child(3n+2),
-.portfolio-item:nth-child(3n+3) {
+.portfolio-item {
   margin-left: 30px;
 }
 
@@ -365,10 +379,8 @@ address {
   font-size: 16px;
   margin: 4px 24px 20px 24px;
   line-height: 1.9em;
-  letter-spacing: 0.03em
+  letter-spacing: 0.03em  
 }
-
-
 
 /* ======= F O O T E R ======= */
 
@@ -377,7 +389,7 @@ footer {
 }
 
 footer .contanier {
-  padding: 60px 0 60px 0;
+  padding: 60px 15px 60px 15px;
 }
 
 .footer-adress1 {
@@ -397,17 +409,6 @@ footer .contanier {
   letter-spacing: 0.03em;
   margin-top: 9px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* =======
 .portfolio-title {
